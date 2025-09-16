@@ -26,7 +26,7 @@ const PostDetails = () => {
                     <img
                         src={post.image}
                         alt={post.name}
-                        className="w-full md:w-1/2 rounded-lg object-cover"
+                        className="w-full md:w-1/2 rounded-lg h-[500px] object-cover"
                     />
 
                     {/* Details Section */}

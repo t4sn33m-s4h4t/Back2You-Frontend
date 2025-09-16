@@ -51,7 +51,7 @@ const Navbar = () => {
                   ? "text-[#3B82F6] font-bold border-b-4 border-[#3B82F6] focus:outline-none"
                   : "text-white font-medium px-2 py-2 rounded-md hover:text-blue-500 focus:outline-none"
               }
-              to={"/posts"}
+              to={"/all-posts"}
             >
               All Posts
             </NavLink>

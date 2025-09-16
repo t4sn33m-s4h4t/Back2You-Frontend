@@ -1,16 +1,13 @@
 import { useState } from 'react';
-import { useQuery } from '@tanstack/react-query';
-import useAuth from '../../hooks/useAuth';
+import { useQuery } from '@tanstack/react-query'; 
 import useAxiosPublic from '../../hooks/useAxiosPublic';
 import { FaReceipt, FaImage, FaInfoCircle, FaClock, FaCheckCircle, FaTimesCircle, FaFilter, FaComments } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import LoadingSpinner from '../../components/LoadingSpinner';
-import Swal from 'sweetalert2';
-import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'; 
 
 const AllClaims = () => {
-    const axiosPublic = useAxiosPublic();
-    const navigate = useNavigate();
+    const axiosPublic = useAxiosPublic(); 
     const [statusFilter, setStatusFilter] = useState('all');
 
     const { data: claims = [], isLoading, refetch } = useQuery({
@@ -24,7 +21,7 @@ const AllClaims = () => {
         ? claims
         : claims.filter(claim => claim.status === statusFilter);
 
-
+ 
     const handleStatusUpdate = async (claimId, newStatus) => {
         Swal.fire({
             title: 'Are you sure?',
@@ -133,7 +130,7 @@ const AllClaims = () => {
                                                         <p className="font-semibold text-gray-800">Claim #{claim._id.slice(-6)}</p>
                                                         <p className="text-xs text-gray-500">{new Date(claim.createdAt).toLocaleDateString()}</p>
                                                         <p className="text-sm mt-1 text-gray-600">
-                                                            Claimant: <span className="font-medium">{claim.claimantName}</span>
+                                                            Trust Score: <span className="font-medium">{claim.trustScore}%</span>
                                                         </p>
                                                     </div>
                                                 </div>

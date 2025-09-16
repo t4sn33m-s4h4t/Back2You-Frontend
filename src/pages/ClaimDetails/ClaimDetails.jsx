@@ -32,7 +32,7 @@ const ClaimDetails = () => {
 
     if (isLoading) return <LoadingSpinner />;
     if (!claim) return <div className="text-center py-12">Claim not found</div>;
-    console.log(claim)
+ 
     return (
         <div className="container mx-auto px-4 py-8">
             <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
@@ -44,6 +44,7 @@ const ClaimDetails = () => {
                         {
                             // !user.role!=='admin' && <p><span className="font-medium">Claim ID:</span> {claim?._id}</p>
                         }
+                        <p><span className="font-medium">Trust Score:</span> {claim?.trustScore}%</p>
                         <p><span className="font-medium">Status:</span> {getStatusBadge(claim?.status)}</p>
                         <p><span className="font-medium">Date Submitted:</span> {new Date(claim?.createdAt).toLocaleString()}</p>
                         {claim?.updatedAt && (

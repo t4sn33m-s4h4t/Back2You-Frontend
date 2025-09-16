@@ -91,7 +91,7 @@ const MyClaims = () => {
                 {claims.length === 0 ? (
                     <div className="text-center lg:min-h-[350px]">
                         <h2 className="text-xl font-medium my-4">You haven't made any claims yet</h2>
-                        <Link to="/posts" className="btn btn-primary">
+                        <Link to="/all-posts" className="btn btn-primary">
                             Browse Lost & Found Items
                         </Link>
                     </div>

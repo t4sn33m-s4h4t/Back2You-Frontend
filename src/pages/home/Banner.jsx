@@ -33,7 +33,7 @@ const Banner = () => {
                     >
                         <button className="bg-[#1a237e] hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold shadow-md transition-all duration-300 transform hover:scale-105">
                             
-                            <Link to="/posts">🔍 View All Items</Link>
+                            <Link to="/all-posts">🔍 View All Items</Link>
                         </button>
                         <button className="bg-red-600 text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-red-700 transition-all duration-300 transform hover:scale-105">
                             <Link to="/addPost">➕ Add Item</Link>

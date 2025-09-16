@@ -55,12 +55,12 @@ const router = createBrowserRouter([
         </PrivateRoute>,
       },
       {
-        path: "/posts",
-        element: <PrivateRoute><AllPosts></AllPosts></PrivateRoute>,
+        path: "/all-posts",
+        element: <AllPosts></AllPosts>,
       },
       {
         path: "/posts/:id",
-        element: <PrivateRoute><PostDetails></PostDetails></PrivateRoute>,
+        element: <PostDetails />,
       },
       {
         path: '/myAddedPosts',
