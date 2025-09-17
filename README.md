@@ -1,6 +1,6 @@
 # Back2You - Frontend
 
-Back2You's frontend is built with **React, Vite, TailwindCSS, and Firebase**. It provides a modern and responsive UI for managing posts, claims, user interactions, and real-time chat.
+Back2You's frontend is built with **React, Vite, TailwindCSS, and Firebase**. It provides a modern and responsive UI for managing posts, claims, user interactions and real-time chat.
 
 ## Features
 - User registration and login
